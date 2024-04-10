@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\WebApplication1.csproj|C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\MESFactoryTalkAPI.csproj|c:\\users\\andre.filho\\onedrive - radix engenharia e desenvolvimento de software s a\\\u00E1rea de trabalho\\atlantis api\\api\\webapplication1\\webapplication1\\opccomm\\opcserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\MESFactoryTalkAPI.csproj|solutionrelative:webapplication1\\opccomm\\opcserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\MESFactoryTalkAPI.csproj|c:\\users\\andre.filho\\onedrive - radix engenharia e desenvolvimento de software s a\\\u00E1rea de trabalho\\atlantis api\\api\\webapplication1\\webapplication1\\dto\\tagdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\MESFactoryTalkAPI.csproj|solutionrelative:webapplication1\\dto\\tagdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\WebApplication1.csproj|c:\\users\\andre.filho\\onedrive - radix engenharia e desenvolvimento de software s a\\\u00E1rea de trabalho\\atlantis api\\api\\webapplication1\\webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\WebApplication1.csproj|C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A62F93BD-9A09-461B-BEF7-4A2AA0EB5173}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-09T18:12:43.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TagData.cs",
+              "DocumentMoniker": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\DTO\\TagData.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\TagData.cs",
+              "ToolTip": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\DTO\\TagData.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\TagData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:55:35.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:51:40.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OPCServer.cs",
+              "DocumentMoniker": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\OPCComm\\OPCServer.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\OPCComm\\OPCServer.cs",
+              "ToolTip": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\OPCComm\\OPCServer.cs",
+              "RelativeToolTip": "WebApplication1\\OPCComm\\OPCServer.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwB4AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:55:16.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\andre.filho\\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\\\u00C1rea de Trabalho\\Atlantis API\\API\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebApplication1\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAwwB0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-09T17:52:53.455Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
