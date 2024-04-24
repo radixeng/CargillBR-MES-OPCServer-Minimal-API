@@ -1,67 +1,79 @@
-﻿using System.Xml;
+﻿using MESOPCServerMinimalAPI.DTO;
 using Opc.UaFx.Client;
 using Newtonsoft.Json;
-using MESOPCServerMinimalAPI.DTO;
-using System.Net.Sockets;
 
 namespace MESOPCServerMinimalAPI.OPCServer
 {
-    class OPCServer
+public class OPCServer
+{
+    private readonly IConfiguration? _config;
+    private readonly CustomLog _customLog;
+    public OPCServer(IConfiguration? config, CustomLog customLog)
     {
-        public static string GetAllTags()
+        _config = config;
+        _customLog = customLog;
+    }
+
+    public string? GetAllTags()
+    {
+        // Endereço do servidor OPC UA
+        string? serverUrl = _config?.GetSection("OPCServerConfig:ServerUrl").Value;
+
+        // Lista de tags a serem lidas
+        List<string>? tags = _config.GetSection("OPCServerConfig:Tags").Value.Split(",").ToList();
+
+        try
         {
-            // Endereço do servidor OPC UA
-            string serverUrl = "opc.tcp://NXPE09EKKM.radixengrj.matriz:49320";
-
-            // Lista de tags a serem lidas
-            string[] tags = new string[] {
-            "ns=2;s=Simulation Examples._System._Description",
-            "ns=2;s=Simulation Examples._System._EnableDiagnostics",
-            "ns=2;s=Simulation Examples._System._WriteOptimizationDutyCycle",
-            "ns=2;s=_System._DateTimeLocal"
-        };
-
+            using (var client = new OpcClient(serverUrl))
             {
-                // Cria uma instância do cliente OPC UA
-                using (var client = new OpcClient(serverUrl))
+                // Iniciando conexão com o OPC Server.
+                client.Connect();
+                if (client.State == OpcClientState.Connected)
                 {
-                    // Conecta ao servidor OPC UA
-                    client.Connect();
-
-                    Console.WriteLine("Conectado ao servidor OPC UA.");
+                    _customLog.Log($"Information: Conectado ao servidor OPC UA: {serverUrl}");
 
                     var tagDataList = new List<TagData>();
 
                     foreach (string tag in tags)
                     {
-                        // Lê o valor da tag atual
                         var OPCServerResponse = client.ReadNode(tag);
 
-                        if (OPCServerResponse != null)
+                        tagDataList.Add(new TagData
                         {
-                           
-                            TagData tagData = new TagData();
+                            Tag = tag,
+                            Value = OPCServerResponse.Value,
+                            Timestamp = OPCServerResponse.SourceTimestamp,
+                            Quality = OPCServerResponse.Status.Code.ToString()
+                        });
 
-                            // Adiciona os dados da tag à lista
-                            tagDataList.Add(new TagData { Tag = tag, Value = OPCServerResponse.Value, Timestamp = OPCServerResponse.SourceTimestamp, Quality = OPCServerResponse.Status.Code.ToString() });
-                        }
-                        else
+                        if (!OPCServerResponse.Status.IsGood)
                         {
-                            Console.WriteLine($"Falha ao ler a tag {tag}.");
+                            // Se houver erro na tag, será registrado no log
+                            _customLog.Log($"Error: Erro ao ler a tag {tag}: {OPCServerResponse.Value}");
                         }
                     }
 
                     // Serializa os dados para JSON
                     string json = JsonConvert.SerializeObject(tagDataList, Newtonsoft.Json.Formatting.Indented);
 
-
                     // Desconecta do servidor OPC UA
                     client.Disconnect();
+                    _customLog.Log("Information: Desconectado do servidor OPC UA.");
+
                     return json;
                 }
-
+                else
+                {
+                    _customLog.Log($"Information: Status da conexão ao servidor OPC UA: {client.State.ToString()}");
+                }
+                return "";
             }
-
+        }
+        catch (Exception ex)
+        {
+            _customLog.Log($"Error: Erro ao conectar ao servidor OPC UA: {ex.Message}");
+            return null;
         }
     }
+}
 }

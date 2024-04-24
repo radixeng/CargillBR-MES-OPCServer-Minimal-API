@@ -1,30 +1,34 @@
-using MESOPCServerMinimalAPI.DTO;
 using MESOPCServerMinimalAPI.OPCServer;
-using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
-using Opc.UaFx.Client;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+var config = builder.Configuration;
+
+string logPath = config["LogPath"];
+var customLog = new CustomLog(logPath);
+
+try
+{
+
+builder.Services.AddSingleton(customLog);
 
 var app = builder.Build();
 
-app.UseHttpsRedirection();
-app.UseSwagger();
-
-// Endpoint para retornar as tags do servidor OPC UA
 app.MapGet("/opcservertags", () =>
-
 {
-    var OPCTags = OPCServer.GetAllTags();
+    var OCPObj = new OPCServer(config, customLog);
+    var OPCTags = OCPObj.GetAllTags();
 
     return OPCTags;
-
 });
 
-app.UseSwaggerUI();
+    app.Run();
 
-app.Run();
+}
+
+catch (Exception ex)
+{
+customLog.Log("Warning: Um erro inesperado ocorreu: {0}", ex.Message);
+}
+
+
