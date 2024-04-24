@@ -2,5 +2,6 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\andre.filho\OneDrive - RADIX ENGENHARIA E DESENVOLVIMENTO DE SOFTWARE S A\Área de Trabalho\Atlantis API\API\MESFactoryTalkAPI\MESFactoryTalkAPI\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
