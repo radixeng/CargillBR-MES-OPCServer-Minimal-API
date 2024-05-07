@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var config = builder.Configuration;
 
-string logPath = config["LogPath"];
+string logPath = config["OPCServerConfig:LogPath"];
 var customLog = new CustomLog(logPath);
 
 try
