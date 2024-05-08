@@ -1,33 +1,36 @@
 ﻿namespace MESOPCServerMinimalAPI.OPCServer
+
 {
-public class CustomLog
-{
-    private readonly string _logFilePath;
-
-    public CustomLog(string logFilePath)
+    public class CustomLog
     {
-        _logFilePath = logFilePath;
+        private readonly string _logDirectory;
 
-        string logDirectory = Path.GetDirectoryName(logFilePath);
-        if (!Directory.Exists(logDirectory))
+        public CustomLog(string logDirectory)
         {
-            Directory.CreateDirectory(logDirectory);
-        }
-    }
+            _logDirectory = logDirectory;
 
-    public void Log(string message, string infoTag = "")
-    {
-        using (StreamWriter writer = File.AppendText(_logFilePath))
-        {
-            if (!string.IsNullOrEmpty(infoTag))
+            if (!Directory.Exists(_logDirectory))
             {
-                writer.WriteLine($"{DateTime.Now:yyyy-MM-dd-HH:mm:ss} - {message} - {infoTag}");
-            }
-            else
-            {
-                writer.WriteLine($"{DateTime.Now:yyyy-MM-dd-HH:mm:ss} - {message}");
+                Directory.CreateDirectory(_logDirectory);
             }
         }
+
+        public void Log(string message, string infoTag = "")
+        {
+            string fileName = $"{DateTime.Now:yyyy-MM-dd}_log.txt";
+            string filePath = Path.Combine(_logDirectory, fileName);
+
+            using (StreamWriter writer = File.AppendText(filePath))
+            {
+                if (!string.IsNullOrEmpty(infoTag))
+                {
+                    writer.WriteLine($"{DateTime.Now:yyyy-MM-dd-HH:mm:ss} - {message} - {infoTag}");
+                }
+                else
+                {
+                    writer.WriteLine($"{DateTime.Now:yyyy-MM-dd-HH:mm:ss} - {message}");
+                }
+            }
+        }
     }
-}
 }
