@@ -1,5 +1,7 @@
 # MESOPCServerMinimalAPI
 
+![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
+
 ## Descrição
 A MESOPCServerMinimalAPI é uma API minimalista desenvolvida em C# para coletar dados de tags do servidor OPC UA Factory Talk e devolvê-los em formato JSON. Esses dados são destinados a serem interpretados e traduzidos no MES Atlantis.
 
@@ -16,6 +18,7 @@ Exemplo de uso:
 ```bash
 GET /opcservertags
 ```
+
 ## Contribuição
 Se desejar contribuir para este projeto, por favor, abra uma issue ou envie um pull request.
 
