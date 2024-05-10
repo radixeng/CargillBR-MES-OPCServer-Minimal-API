@@ -20,7 +20,8 @@ GET /opcservertags
 Se desejar contribuir para este projeto, por favor, abra uma issue ou envie um pull request.
 
 ## Licença
-Este projeto está licenciado sob a Licença MIT.
+
+![MIT LICENCE](https://img.shields.io/badge/license-MIT-blue)
 
 ## Contato
 Para suporte ou feedback, entre em contato com andre.filho@radixeng.com.
@@ -28,7 +29,14 @@ Para suporte ou feedback, entre em contato com andre.filho@radixeng.com.
 ## Exemplos
 Aqui estão alguns exemplos de uso da API:
 
-(Inserir imagem exemplo)
+### Requisição Get
+![image](https://github.com/radixeng/CargillBR-MES-OPCServer-Minimal-API/assets/166434418/fa477fc3-236a-40e5-bd98-ba5dd8566ca0)
+
+### Resposta de dados em JSON
+![image](https://github.com/radixeng/CargillBR-MES-OPCServer-Minimal-API/assets/166434418/e6396cfc-f0a7-41b6-8579-b3d534a0dfdc)
+
+### Exemplo de Log
+![image](https://github.com/radixeng/CargillBR-MES-OPCServer-Minimal-API/assets/166434418/c3f86335-f2ad-458a-95ef-fed48f2c1403)
 
 ## Status
 Este projeto está em desenvolvimento ativo.
